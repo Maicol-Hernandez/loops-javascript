@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>maicool</title>
+    </head>
+    <body>
+        <h1>taller de practica</h1>
+        <hr>
+        <script>
+            document.write("<h2>")
+            var bonificacion,descuento,valorPagar,SueldoActual,categoria;
+            var menu="CATEGORIA SUELDO BASICO\n\n";
+            SueldoActual=parseInt(prompt("Ingrese el sueldo actual del empleado"));
+            menu+="1. categoria\n";
+            menu+="2. categoria\n";
+            menu+="3. categoria\n";
+            menu+="4. categoria\n\n";
+            menu+="Ingrese la categoria del empleado\n"
+            categoria=parseInt(prompt(menu))
+            
+            switch(categoria){
+                case 1: document.write("1. categoria<br>");
+                if(valorPagar=SueldoActual+SueldoActual*0.15-SueldoActual*0.02){
+                    document.write("El valor a pagar al empleado es: "+valorPagar);
+                    break;
+                    }
+                    case 2: document.write("2. categoria<br>");
+                if(valorPagar=SueldoActual+SueldoActual*0.10-SueldoActual*0.015){
+                    document.write("El valor a pagar al empleado es: "+valorPagar);
+                    break;
+                    }
+                    case 3: document.write("3. categoria<br>");
+                if(valorPagar=SueldoActual+SueldoActual*0.8-SueldoActual*0.01){
+                    document.write("El valor a pagar al empleado es: "+valorPagar);
+                    break;
+                    }
+                    case 4: document.write("4. categoria<br>");
+                if(valorPagar=SueldoActual+SueldoActual*0.0-SueldoActual*0.00){
+                    document.write("El valor a pagar al empleado es: "+valorPagar);
+                    break;
+                    }
+                    default:document.write("ERROR: "+valorPagar);
+                    
+               }
+            document.write("</h2>")
+        </script>
+    </body>
+</html>

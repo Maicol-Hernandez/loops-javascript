@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>maicool</title>
+    </head>
+    <h1>Haga un algoritmo que solicite la siguiente informacion de una persona:<br><br>
+        Nombre,apellido,documento de identidad,telefono,profesio,edad y años a validar y posteriormente imprima toda la informacion asi como la edad que tendria la persona en los años a validar</h1>
+     <hr>
+     <script>
+         document.write("<h1>")
+         var nombre,apellido,documIden,telefono,profesion,añosAvalidar,edad,suma;
+         nombre=prompt("Ingrese su nombre");
+         apellido=prompt("Ingrese el su primer apellido");
+         documIden=prompt("Ingrese su numero de identificacion");
+         telefono=prompt("Ingrese su numero de telefono");
+         profesion=prompt("Ingrese su profesion");
+         añosAvalidar=parseInt(prompt("Ingrese sus años a validar"));
+         edad=parseInt(prompt("Ingrese su edad"));
+         
+         suma=edad+añosAvalidar
+         document.write("Sus años a validar son: "+suma+"<br>Su nombre es: "+nombre+"<br>Su apellido es: "+apellido+"<br>Su numero de id: "+documIden+"<br>Su numero de telefono es: "+telefono+"<br>Su profesion es: "+profesion+"<br>Sus años a validar son: "+añosAvalidar+"<br>Su edad es: "+edad);
+        
+
+        document.write("</h1>")
+     </script>
+
+    </html>

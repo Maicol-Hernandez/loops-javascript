@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>maicool</title>
+    </head>
+    <body>
+        <h1>taller de instrumento evaluativo</h1>
+        <hr>
+        <script>
+            document.write("<h2>")
+            var anioActual,modelo,tipoVehiculo,categoria,valorLavada,valorApagar,antiguedad;
+            
+            var menu="TIPO DE VEHICULO\n\n"
+            menu+="1. AUTOMOVIL\n";
+            menu+="2. CAMPERO\n";
+            menu+="3. CAMIONETA\n\n";
+            menu+="Ingrese el tipo de vehiculo";
+            tipoVehiculo=parseInt(prompt(menu))
+
+            switch(tipoVehiculo){
+                case 1: document.write("1.AUTOMOVIL<br>");
+                var menu2="CATEGORIA AUTOMOVIL\n\n"
+            menu2+="1. Pequeño\n";
+            menu2+="2. Mediano\n";
+            menu2+="3. De lujo\n\n";
+            menu2+="Ingrese el tipo de categoria de AUTOMOVIL";
+            categoria=parseInt(prompt(menu2));
+            switch(categoria){
+                case 1:document.write("1. pequeño<br>");
+                valorLavada=4000
+                break;
+                case 2:document.write("2. Mediano<br>");
+                valorLavada=5000
+                break;
+                case 3:document.write("3. De lujo<br>");
+                valorLavada=6000
+                break;
+                default:document.write("La categoria del automovil no existe");
+            }
+                          break;
+                case 2: document.write("2.CAMPERO<br>");
+                var menu2="CATEGORIA CAMPERO\n\n"
+            menu2+="1. Sencillo\n";
+            menu2+="2. De lujo\n\n";
+            menu2+="Ingrese el tipo de categoria CAMPERO";
+            categoria=parseInt(prompt(menu2));
+            switch(categoria){
+                case 1:document.write("1. Sencillo<br>");
+                valorLavada=5000
+                break;
+                case 2:document.write("2. De lujo<br>");
+                valorLavada=8000
+                break;
+                default:document.write("La categoria del campero no existe");
+            }
+                          break;
+                case 3: document.write("3.CAMIONETA<br>");
+                var menu2="CATEGORIA CAMIONETA \n\n"
+            menu2+="1. Cabina sencilla\n";
+            menu2+="2. Doble cabina\n\n";
+            menu2+="Ingrese el tipo de categoria de CAMIONETA";
+            categoria=parseInt(prompt(menu2));
+            switch(categoria){
+                case 1:document.write("1. Cabina sencilla<br>");
+                valorLavada=6000
+                break;
+                case 2:document.write("2. Doble cabina<br>");
+                valorLavada=8000
+                break;
+                default:document.write("La categoria de la camioneta no existe");
+
+
+            }
+                
+                       break;
+                default:document.write("ERROR: "+tipoVehiculo+"<br>");
+             }
+             valorApagar=valorLavada
+             
+            anioActual=parseInt(prompt("Ingrese el año actual"));
+            modelo=parseInt(prompt("Ingrese el modelo del automotor"));
+            antiguedad=anioActual-modelo
+
+            if(antiguedad>=8){
+                valorApagar=valorLavada+(valorLavada*0.2);
+            }
+            document.write("El total a pagar es: "+valorApagar)
+
+            document.write("</h2>")
+        </script>
+    </body>
+</html>
